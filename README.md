@@ -1,13 +1,10 @@
 # to-uppercase
 Create new string with capitalize letters
+-split str to each word and make it to lower case
+-create new array to put the string in that array
+-create for loop to loop inside string
+-add each word to the array and replace the first letter with
+the upper case letters
+-return new array with join() to put the word into the new string
+with the capitalize each words
 
-function titleCase(str) {
-	let lowerLetters = str.toLowerCase().split(" ");
-	let newArr = [];
-	for(let i = 0; i < lowerLetters.length; i++){
-		newArr.push(lowerLetters[i].replace(lowerLetters[i][0] , lowerLetters[i][0].toUpperCase()));
-	}
-	return newArr.join(" ");
-  }
-
-console.log(titleCase("HERE IS MY HANDLE HERE IS MY SPOUT"))
